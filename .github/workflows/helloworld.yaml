@@ -18,9 +18,9 @@ jobs:
               run: echo "Hello everyone!"
               shell: bash
     
-    thankyou:
+    githubworkspace:
         runs-on: ubuntu-latest
         steps:
-            - name: Thank you step
-              run: echo "Thank you for exploring GitHub Actions!"
+            - name: Display workspace path
+              run: echo $GITHUB_WORKSPACE
               shell: bash
